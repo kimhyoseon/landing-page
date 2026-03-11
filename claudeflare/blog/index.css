@@ -458,3 +458,57 @@ main{display:block}
   .easy-step{flex-direction:column;gap:14px;align-items:center;text-align:center}
   .coming-soon__embed{max-width:100%}
 }
+
+/* ============================================================
+   가격 심리 전략 CSS
+   ============================================================ */
+
+/* 히어로 일일 단가 */
+.hero__daily-price{font-size:15px;color:rgba(255,255,255,.55);margin-top:8px;letter-spacing:.02em}
+
+/* 앵커 가격 배지 */
+.anchor-price-badge{display:inline-flex;align-items:center;gap:12px;margin-top:20px;padding:14px 28px;background:linear-gradient(135deg,rgba(255,107,74,.04),rgba(78,205,196,.04));border:2px solid rgba(78,205,196,.2);border-radius:var(--radius-sm);flex-wrap:wrap;justify-content:center}
+.anchor-price-badge__original{font-size:16px;color:var(--mid-gray);text-decoration:line-through;opacity:.6}
+.anchor-price-badge__arrow{font-size:18px;color:var(--mid-gray);opacity:.4}
+.anchor-price-badge__current{font-size:20px;font-weight:800;color:var(--coral)}
+.anchor-price-badge__discount{font-size:13px;font-weight:700;color:#fff;background:var(--coral);padding:3px 10px;border-radius:20px}
+
+/* 비교표 가격 하이라이트 */
+.table-price-highlight{display:flex;flex-direction:column;align-items:center;gap:2px}
+.table-price-original{font-size:13px;color:var(--mid-gray);opacity:.5}
+.table-price-daily{font-size:12px;color:var(--mint);font-weight:600}
+
+/* 의심 반박 카드 */
+.doubt-cards{display:flex;flex-direction:column;gap:20px}
+.doubt-card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:var(--radius);overflow:hidden}
+.doubt-card__question{display:flex;align-items:center;gap:12px;padding:20px 24px;background:rgba(255,107,74,.03);border-bottom:1px solid rgba(0,0,0,.04);font-size:16px;font-weight:700;color:var(--navy)}
+.doubt-card__icon{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(255,107,74,.1);color:var(--coral);font-weight:800;font-size:14px;flex-shrink:0}
+.doubt-card__answer{display:flex;gap:12px;padding:20px 24px;font-size:15px;color:var(--dark-gray);line-height:1.75}
+.doubt-card__check{color:var(--mint);font-size:18px;font-weight:700;flex-shrink:0;margin-top:2px}
+.doubt-rationalize{font-size:17px;color:var(--dark-gray);line-height:1.8}
+
+/* 손실 회피 그리드 */
+.loss-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.loss-card{text-align:center;padding:32px 24px;background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:var(--radius)}
+.loss-card__number{font-size:clamp(32px,5vw,44px);font-weight:900;color:var(--coral);line-height:1}
+.loss-card__label{font-size:15px;font-weight:700;color:var(--navy);margin-top:8px}
+.loss-card__desc{font-size:14px;color:var(--dark-gray);margin-top:12px;line-height:1.7}
+.loss-comparison{max-width:480px;margin:32px auto 0;padding:28px;background:var(--navy);border-radius:var(--radius);text-align:center}
+.loss-comparison__row{display:flex;justify-content:space-between;align-items:center;padding:8px 0}
+.loss-comparison__label{font-size:15px;color:rgba(255,255,255,.7)}
+.loss-comparison__value{font-size:22px;font-weight:800}
+.loss-comparison__vs{font-size:14px;color:rgba(255,255,255,.3);padding:8px 0;font-weight:600}
+
+/* CTA 자기합리화 */
+.final-cta__rationalize{font-size:15px;color:rgba(255,255,255,.5);text-align:center;margin-top:12px;line-height:1.7}
+
+/* 스티키 CTA 일일 단가 */
+.sticky-cta__daily{font-size:11px;color:var(--mint);font-weight:600;margin-left:4px}
+
+@media(max-width:768px){
+  .loss-grid{grid-template-columns:1fr}
+  .loss-comparison__row{flex-direction:column;gap:4px;text-align:center}
+  .doubt-card__question{font-size:15px;padding:16px 20px}
+  .doubt-card__answer{padding:16px 20px;font-size:14px}
+  .anchor-price-badge{padding:12px 20px;gap:8px}
+}
