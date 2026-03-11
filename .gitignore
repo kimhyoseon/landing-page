@@ -1,4 +1,15 @@
-.claude/
+# Ignore everything
+*
+
+# Allow claudeflare/ and its contents
+!claudeflare/
+!claudeflare/**
+
+# Allow gitignore itself
+!.gitignore
+
+# Common junk
 .DS_Store
 Thumbs.db
 *.log
+node_modules/

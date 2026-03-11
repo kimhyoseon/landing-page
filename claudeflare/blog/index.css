@@ -88,6 +88,11 @@ main{display:block}
 .btn-outline-white{background:transparent;color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.3);padding:14px 32px;border-radius:var(--radius-xs);font-size:16px;font-weight:400;min-height:48px}
 .btn-outline-white:hover{border-color:rgba(255,255,255,.6);color:var(--white);background:rgba(255,255,255,.05)}
 .btn-outline-white:focus-visible{outline:3px solid rgba(255,255,255,.6);outline-offset:3px}
+.btn-kakao{background:#FEE500;color:#191919;padding:16px 36px;border-radius:12px;font-size:16px;font-weight:600;min-height:48px;display:inline-flex;align-items:center;gap:8px;border:none;transition:background .2s,transform .2s,box-shadow .2s}
+.btn-kakao:hover{background:#F5DC00;transform:translateY(-2px);box-shadow:0 4px 16px rgba(254,229,0,.4);color:#191919}
+.btn-kakao:focus-visible{outline:3px solid #FEE500;outline-offset:3px}
+.btn-kakao.btn-large{padding:20px 48px;font-size:clamp(17px,2.5vw,19px);border-radius:14px;min-width:320px}
+.btn-kakao svg{flex-shrink:0}
 
 /* ===== RIPPLE ===== */
 .btn .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,0.3);transform:scale(0);animation:rippleEffect 0.6s ease-out forwards;pointer-events:none}
@@ -352,6 +357,7 @@ main{display:block}
 .sticky-cta__price{color:var(--white);font-size:14px;font-weight:600}
 .sticky-cta__price span{color:var(--coral);font-size:18px;font-weight:800}
 .sticky-cta .btn-primary{padding:12px 28px;font-size:15px;min-width:auto;min-height:44px;border-radius:10px}
+.sticky-cta .btn-kakao{padding:10px 24px;font-size:14px;min-width:auto;min-height:44px;border-radius:10px}
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:767px){
@@ -359,7 +365,7 @@ main{display:block}
   .hero{padding:clamp(60px,10vw,80px) 16px clamp(40px,6vw,50px)}
   .hero__badges{flex-direction:column;align-items:center}
   .hero__badge{width:100%;max-width:300px;justify-content:center}
-  .btn-primary,.btn-large{min-width:auto;width:100%;max-width:340px}
+  .btn-primary,.btn-large,.btn-kakao{min-width:auto;width:100%;max-width:340px}
   .metrics{grid-template-columns:1fr}
   .stats-box{grid-template-columns:1fr;gap:24px;padding:32px 20px}
   .savings-grid{grid-template-columns:1fr}
