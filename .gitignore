@@ -5,6 +5,10 @@
 !claudeflare/
 !claudeflare/**
 
+# Allow abandoned-blog-outreach/ and its contents
+!abandoned-blog-outreach/
+!abandoned-blog-outreach/**
+
 # Allow gitignore itself
 !.gitignore
 
